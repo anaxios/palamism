@@ -1,0 +1,23 @@
+name="palamism"
+main="src/index.ts"
+
+compatibility_date = "2022-11-22"
+
+kv_namespaces = [
+  { binding = "CALCACHE", id = "96d0808997df400b9ccef1f7828480f1" }
+]
+
+#[ai]
+#binding = "AI"
+
+
+#[[vectorize]]
+#binding = "VECTORIZE_INDEX" # available within your Worker on env.VECTORIZE_INDEX
+##index_name = "langchain-workers"
+#index_name = "patristics-paragraphs"
+
+
+
+#[[queues.producers]]
+#  queue = "embed"
+#  binding = "embed-queue"
